@@ -1,4 +1,5 @@
-numpy>=1.26
-opencv-python>=4.10
-PyYAML>=6.0
-pytest>=8.0
+# The Python packages this project needs. Install them with:  pip install -r requirements.txt
+numpy>=1.26          # NumPy: fast maths on arrays; every image is a NumPy array
+opencv-python>=4.10  # OpenCV: the computer-vision library (colours, alignment, contours, drawing, windows)
+PyYAML>=6.0          # PyYAML: reads the settings file config.yaml
+pytest>=8.0          # pytest: runs the automated tests in tests/

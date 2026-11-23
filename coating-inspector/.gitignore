@@ -1,6 +1,13 @@
+# Files git should not store, because they are made on your computer and can be made again.
+# The virtual environment (the installed packages):
 .venv/
+# Python's caches of compiled code:
 __pycache__/
+# pytest's cache:
 .pytest_cache/
+# Pictures from the quick checks in segment.py and align.py:
 out/
+# Result pictures and reports from check.py:
 results/
+# The synthetic sample photos (python -m coating_inspector.synthetic makes them again):
 samples/

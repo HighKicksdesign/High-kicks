@@ -1,5 +1,6 @@
 {
-  "python.testing.pytestEnabled": true,
-  "python.testing.unittestEnabled": false,
-  "python.testing.pytestArgs": ["tests"]
+  // Settings for this project folder only. VS Code allows comments like these in its settings files.
+  "python.testing.pytestEnabled": true,  // show the tests in the Testing panel (flask icon), run by pytest
+  "python.testing.unittestEnabled": false,  // don't use Python's other test runner, unittest
+  "python.testing.pytestArgs": ["tests"]  // look for tests in the tests/ folder
 }

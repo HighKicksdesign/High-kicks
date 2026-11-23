@@ -1,36 +1,39 @@
 {
-  "version": "0.2.0",
-  "configurations": [
+  // Run and Debug entries for each step: open Run and Debug (Ctrl+Shift+D), pick one, press F5.
+  // VS Code allows comments like these in its settings files.
+  "version": "0.2.0",  // the format version of this file; VS Code expects 0.2.0
+  "configurations": [  // the list of entries
     {
-      "name": "1 Make sample photos",
-      "type": "debugpy",
-      "request": "launch",
-      "module": "coating_inspector.synthetic",
-      "cwd": "${workspaceFolder}"
+      "name": "1 Make sample photos",  // the name shown in the Run and Debug list
+      "type": "debugpy",  // run it with the Python Debugger extension
+      "request": "launch",  // start the program (rather than attach to one that is already running)
+      "module": "coating_inspector.synthetic",  // the same as typing: python -m coating_inspector.synthetic
+      "cwd": "${workspaceFolder}"  // run from the project folder, so config.yaml and samples/ are found
     },
     {
-      "name": "2 Tune colours",
-      "type": "debugpy",
-      "request": "launch",
-      "module": "coating_inspector.tune",
-      "args": ["--image", "samples/approved/approved_1.png"],
-      "cwd": "${workspaceFolder}"
+      "name": "2 Tune colours",  // opens the slider windows on the first sample photo
+      "type": "debugpy",  // Python Debugger
+      "request": "launch",  // start the program
+      "module": "coating_inspector.tune",  // python -m coating_inspector.tune
+      "args": ["--image", "samples/approved/approved_1.png"],  // the options typed after the command
+      "cwd": "${workspaceFolder}"  // run from the project folder
     },
     {
-      "name": "3 Build golden pattern",
-      "type": "debugpy",
-      "request": "launch",
-      "module": "coating_inspector.golden",
+      "name": "3 Build golden pattern",  // builds golden/ from the approved sample photos
+      "type": "debugpy",  // Python Debugger
+      "request": "launch",  // start the program
+      "module": "coating_inspector.golden",  // python -m coating_inspector.golden
+      // the options typed after the command:
       "args": ["--images", "samples/approved", "--keepout", "samples/keepout_mask.png", "--out", "golden"],
-      "cwd": "${workspaceFolder}"
+      "cwd": "${workspaceFolder}"  // run from the project folder
     },
     {
-      "name": "4 Check boards",
-      "type": "debugpy",
-      "request": "launch",
-      "module": "coating_inspector.check",
-      "args": ["--golden", "golden", "--images", "samples/test", "--out", "results"],
-      "cwd": "${workspaceFolder}"
+      "name": "4 Check boards",  // checks the test sample photos against golden/
+      "type": "debugpy",  // Python Debugger
+      "request": "launch",  // start the program
+      "module": "coating_inspector.check",  // python -m coating_inspector.check
+      "args": ["--golden", "golden", "--images", "samples/test", "--out", "results"],  // the options
+      "cwd": "${workspaceFolder}"  // run from the project folder
     }
   ]
 }

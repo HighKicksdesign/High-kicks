@@ -38,6 +38,16 @@ python -m pytest
 Expected: 5 boards pass and 4 fail, each for its built-in defect, and 13 tests pass. Result
 pictures and reports are written to `results/`.
 
+## Reading the code
+
+Every line of code has a plain-language explanation: a comment on the same line or on the line
+just above it. Every function starts with a docstring that says what it does, what goes in (Args)
+and what comes out (Returns). In VS Code, hover over a function name to see its docstring. To
+watch the code run, set a breakpoint, start a Run and Debug entry with F5, and press F10 to run
+one line at a time while reading each line's comment.
+
+## Real boards
+
 Before using it on real boards, follow step 12 of the guide: tune the colour range, measure
 `pixels_per_mm` and set the tolerances in `config.yaml`.
 
