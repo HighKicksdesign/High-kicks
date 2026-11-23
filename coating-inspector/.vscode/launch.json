@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "1 Make sample photos",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "coating_inspector.synthetic",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "2 Tune colours",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "coating_inspector.tune",
+      "args": ["--image", "samples/approved/approved_1.png"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "3 Build golden pattern",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "coating_inspector.golden",
+      "args": ["--images", "samples/approved", "--keepout", "samples/keepout_mask.png", "--out", "golden"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "4 Check boards",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "coating_inspector.check",
+      "args": ["--golden", "golden", "--images", "samples/test", "--out", "results"],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
