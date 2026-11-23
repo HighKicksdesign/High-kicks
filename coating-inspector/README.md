@@ -5,7 +5,8 @@ tool that finds the borders of conformal coating on a PCBA photographed under bl
 each photo up with an approved board, and reports PASS or FAIL with a marked-up picture, a JSON
 report and a CSV summary.
 
-Guide: https://claude.ai/artifact/DqWtpdHKvAi2eDArq8apaL (private until you share it)
+**Build guide: [GUIDE.md](GUIDE.md)** — every step's code, commands and expected output, from
+installing VS Code to setting it up on real boards.
 
 ## Quick start
 

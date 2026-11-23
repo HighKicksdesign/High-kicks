@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 250" width="520" height="250" role="img" aria-label="Tolerance band around the approved coating edge, with a keep-out zone">
+  <title>Tolerance band around the approved coating edge, with a keep-out zone</title>
+  <rect x="0" y="0" width="520" height="250" rx="12" fill="#2a1a3c"/>
+  <rect x="36" y="30" width="336" height="190" rx="24" fill="#3b6a93"/>
+  <rect x="62" y="56" width="284" height="138" rx="10" fill="#5ab8ef"/>
+  <rect x="49" y="43" width="310" height="164" rx="17" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <rect x="404" y="62" width="84" height="126" rx="6" fill="#e046f5" fill-opacity="0.25" stroke="#e046f5" stroke-width="3"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+    <circle cx="204" cy="125" r="14" fill="#ffffff"/><text x="204" y="130" fill="#151a2d">1</text>
+    <circle cx="359" cy="125" r="14" fill="#ffffff"/><text x="359" y="130" fill="#151a2d">2</text>
+    <circle cx="388" cy="228" r="14" fill="#ffffff"/><text x="388" y="233" fill="#151a2d">3</text>
+    <circle cx="446" cy="125" r="14" fill="#ffffff"/><text x="446" y="130" fill="#151a2d">4</text>
+  </g>
+</svg>
